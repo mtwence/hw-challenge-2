@@ -3,25 +3,39 @@
     height: 100vh;
     grid-template-columns: 2fr 1.5fr 1.5fr;
     grid-template-rows:.3fr 1.5fr 1.5fr .5fr;
+    grid-template-areas:
+    "nav nav nav"
+    "bio main main"
+    "bio resume links"
+    "footer footer footer";
+    grid-gap: 20px;
     
 }
 
 nav {
     background-color: darkseagreen;
+    grid-area: nav;
 }
 
 main {
     background-color: honeydew;
-
+    grid-area: main;
 }
 #bio {
-background-color: darksalmon;
+    background-color: darksalmon;
+    grid-area: bio;
 }
 
 #resume{
-background-color: azure;
+    background-color: azure;
+    grid-area: resume;
 }
 
 #links {
-background-color: azure;
+    background-color: azure;
+    grid-area: links;
+}
+
+footer {
+    grid-area: footer;
 }
