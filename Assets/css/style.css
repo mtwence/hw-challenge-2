@@ -1,0 +1,27 @@
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 1.5fr 1.5fr;
+    grid-template-rows:.3fr 1.5fr 1.5fr .5fr;
+    
+}
+
+nav {
+    background-color: darkseagreen;
+}
+
+main {
+    background-color: honeydew;
+
+}
+#bio {
+background-color: darksalmon;
+}
+
+#resume{
+background-color: azure;
+}
+
+#links {
+background-color: azure;
+}
