@@ -12,19 +12,57 @@
     
 }
 
-nav {
-    background-color: darkseagreen;
-    grid-area: nav;
-}
 
 main {
     background-color: honeydew;
     grid-area: main;
+    justify-self: center;
+    width: 100%;
 }
 #bio {
     background-color: darksalmon;
-    grid-area: bio;
+    grid-area: bio; 
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: .5fr 1fr .75fr;
+    grid-template-areas: 
+    "heading2"
+    "avi"
+    "p1" ;
+  justify-items: center;
+  align-items: center;
 }
+
+h2 {
+    align-self: center;
+}
+header {
+    background-color: darkseagreen;
+    grid-area: nav;
+    justify-content: space-between;
+    align-items: center;
+    width 100%;
+    display: flex;
+}
+.headings2 {
+    grid-area: headings2;
+}
+
+#avi {
+    grid-area: avi;
+    align-self: center;
+    height: .5fr;
+}
+
+#p1 {
+    grid-area: p1;
+}
+
+.navbar-heading {
+    justify-content:flex-end;
+    align-items: center;
+}
+
 
 #resume{
     background-color: azure;
